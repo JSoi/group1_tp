@@ -64,7 +64,7 @@ public class Calculator {
 	public static void main(String[] args) throws IOException {
 		 final Logger logInfo = Logger.getLogger(
 				    Thread.currentThread().getStackTrace()[0].getClassName() );
-		BufferedReader br = new BufferedReader(new FileReader("/src/Out.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("src/Out.txt"));
 		for (;;) {
 			Calculator cal = new Calculator();
 	        	String fileline = br.readLine();
