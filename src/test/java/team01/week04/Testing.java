@@ -12,7 +12,6 @@ public class Testing {
 		cal6.grade = 1;
 		cal6.line = 1;
 		cal6.time = 999;
-		assertTrue( ((cal6.money() - 49.95) < 0.1) && ((cal6.money() - 49.95)>= 0) );
 		assertEquals(cal6.money(), 49.95, 0.02);
 	}
 	
@@ -22,7 +21,7 @@ public class Testing {
 		cal6.grade = 2;
 		cal6.line = 1;
 		cal6.time = 499;
-		assertTrue( ((cal6.money() - 29.95) < 0.1) && ((cal6.money() - 29.95)>= 0) );
+		assertEquals(cal6.money(), 29.95, 0.02);
 	}
 	
 	@Test
@@ -31,7 +30,7 @@ public class Testing {
 		cal6.grade = 3;
 		cal6.line = 1;
 		cal6.time = 878;
-		assertTrue( (cal6.money()< 0.1) && (cal6.money()>= 0) );
+		assertEquals(cal6.money(), 0.0, 0.02);//assertTrue( (cal6.money()< 0.1) && (cal6.money()>= 0) );
 	}
 
 	@Test
@@ -46,7 +45,7 @@ public class Testing {
 		Calculator cal2 = new Calculator();//assertEquals(a,b)
 		cal2.grade = 1;
 		cal2.line = 4;
-		assertTrue(((cal2.calline()-34.0)<0.1)&&((cal2.calline()-34.0)>=0));
+		assertEquals(cal6.calline(), 34.0, 0.02);//assertTrue(((cal2.calline()-34.0)<0.1)&&((cal2.calline()-34.0)>=0));
 	}
 	
 	@Test
@@ -54,7 +53,7 @@ public class Testing {
 		Calculator cal1 = new  Calculator();
 		cal1.grade = 2;
 		cal1.line =4;
-		assertTrue(((cal1.calline()-48.0)<0.1)&&((cal1.calline()-48.0)>=0));
+		assertEquals(cal6.calline(), 48.0, 0.02);//assertTrue(((cal1.calline()-48.0)<0.1)&&((cal1.calline()-48.0)>=0));
 		
 	}
 	
@@ -63,7 +62,7 @@ public class Testing {
 		Calculator cal1 = new Calculator();
 		cal1.grade = 1;
 		cal1.line=2;
-		assertTrue(((cal1.calline()-14.5)<0.1)&&((cal1.calline()-14.5)>=0));
+		assertEquals(cal6.calline(), 14.5, 0.02);//assertTrue(((cal1.calline()-14.5)<0.1)&&((cal1.calline()-14.5)>=0));
 	}
 	
 	@Test
@@ -71,7 +70,7 @@ public class Testing {
 		Calculator cal1 = new Calculator();
 		cal1.grade = 2;
 		cal1.line=2;
-		assertTrue(((cal1.calline()-21.5)<0.1)&&((cal1.calline()-21.5)>=0));
+		assertEquals(cal6.calline(), 21.5, 0.02);//assertTrue(((cal1.calline()-21.5)<0.1)&&((cal1.calline()-21.5)>=0));
 	}
 	
 	
@@ -81,7 +80,7 @@ public class Testing {
 		Calculator cal1 = new Calculator(); //assertEquals(a,b)
 		cal1.grade = 1;
 		cal1.line = 1;
-		assertTrue(((cal1.calline())<0.1)&&((cal1.calline())>=0));	
+		assertEquals(cal6.calline(), 0.0, 0.02);//assertTrue(((cal1.calline())<0.1)&&((cal1.calline())>=0));	
 	}
 	
 	
@@ -127,34 +126,34 @@ public class Testing {
 		Calculator cal = new Calculator();//assertEquals(a,b)
 		cal.grade = 1;
 		cal.time = 878;
-		assertTrue((cal.calminute()-49.95)<0.1&&(cal.calminute()-49.95)>=0);
+		assertEquals(cal6.calminute(), 49.95, 0.02);//assertTrue((cal.calminute()-49.95)<0.1&&(cal.calminute()-49.95)>=0);
 	}
 	@Test
 	public void testcalminutegoldexistaddline(){
 		Calculator cal = new Calculator();//assertEquals(a,b)
 		cal.grade = 1;
 		cal.time = 1127;
-		assertTrue((cal.calminute()-107.1)<0.1&&(cal.calminute()-107.1)>=0);
+		assertEquals(cal6.calminute(), 107.1, 0.02);//assertTrue((cal.calminute()-107.1)<0.1&&(cal.calminute()-107.1)>=0);
 	}
 	@Test
 	public void testcalminutesilvernoaddline(){
 		Calculator cal = new Calculator();//assertEquals(a,b)
 		cal.grade = 2;
 		cal.time = 300;
-		assertTrue((cal.calminute()-29.95)<0.1&&(cal.calminute()-29.95)>=0);
+		assertEquals(cal6.calminute(), 29.95, 0.02);//assertTrue((cal.calminute()-29.95)<0.1&&(cal.calminute()-29.95)>=0);
 	}
 	@Test
 	public void testcalminutesilverexistaddline(){
 		Calculator cal = new Calculator();//assertEquals(a,b)
 		cal.grade = 2;
 		cal.time = 1200;
-		assertTrue((cal.calminute()-407.95)<0.1&&(cal.calminute()-407.95)>=0);
+		assertEquals(cal6.calminute(), 407.95, 0.02);//assertTrue((cal.calminute()-407.95)<0.1&&(cal.calminute()-407.95)>=0);
 	}
 	@Test
 	public void testcalminuteerror(){
 		Calculator cal = new Calculator();//assertEquals(a,b)
 		cal.grade = 3;
-		assertTrue((cal.calminute()+1)>=-0.1&&(cal.calminute()+1)<0.1);
+		assertEquals(cal6.calminute()+1, 0.1, 0.02);//assertTrue((cal.calminute()+1)>=-0.1&&(cal.calminute()+1)<0.1);
 	}
 
 	@Test
