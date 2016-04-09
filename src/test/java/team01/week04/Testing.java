@@ -12,7 +12,7 @@ public class Testing {
 		cal6.grade = 1;
 		cal6.line = 1;
 		cal6.time = 999;
-		assertEquals(cal6.money() == 49.95);
+		assertTrue(((cal6.money() - 49.95) < 0.1) && (((cal6.money() - 49.95)>= 0));
 	}
 	
 	@Test
@@ -21,7 +21,7 @@ public class Testing {
 		cal6.grade = 2;
 		cal6.line = 1;
 		cal6.time = 499;
-		assertEquals(cal6.money() == 29.95);
+		assertTrue(((cal6.money() - 29.95) < 0.1) && (((cal6.money() - 29.95)>= 0));
 	}
 	
 	@Test
@@ -30,7 +30,7 @@ public class Testing {
 		cal6.grade = 3;
 		cal6.line = 1;
 		cal6.time = 878;
-		assertEquals(cal6.money() == 0);
+		assertTrue(cal6.money() == 0);
 	}
 
 	@Test
