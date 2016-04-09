@@ -41,19 +41,20 @@ public class Testing {
 	}
 
 	@Test
-	public void testcalline(){ // 회선으로만 추가되는 요금 test
+	public void testcalLineGold(){ // 占쎌돳占쎄퐨占쎌몵嚥≪뮆彛� �빊遺쏙옙占쎈┷占쎈뮉 占쎌뒄疫뀐옙 test
 		Calculator cal2 = new Calculator();//assertEquals(a,b)
 		cal2.grade = 1;
 		cal2.line = 4;
-		assertEquals(cal2.calline(),34.0);
+		assertTrue(((cal2.calline()-34.0)<0.1)&&((cal2.calline()-34.0)>=0));
 	}
 	
-		@Test
-	public void testcallLineSilver(){
+	@Test
+	public void testAddLineSilver(){
 		Calculator cal1 = new  Calculator();
 		cal1.grade = 2;
 		cal1.line =4;
-		assertEquals(cal1.calline(),48.0);
+		assertTrue(((cal1.calline()-48.0)<0.1)&&((cal1.calline()-48.0)>=0));
+		
 	}
 	
 	@Test
@@ -61,7 +62,7 @@ public class Testing {
 		Calculator cal1 = new Calculator();
 		cal1.grade = 1;
 		cal1.line=2;
-		assertTrue(cal1.calline()==14.5);
+		assertTrue(((cal1.calline()-14.5)<0.1)&&((cal1.calline()-14.5)>=0));
 	}
 	
 	@Test
@@ -69,7 +70,7 @@ public class Testing {
 		Calculator cal1 = new Calculator();
 		cal1.grade = 2;
 		cal1.line=2;
-		assertTrue(cal1.calline()==21.5);
+		assertTrue(((cal1.calline()-21.5)<0.1)&&((cal1.calline()-21.5)>=0));
 	}
 	@Test
 	public void testonelinegoldcalline(){
@@ -150,14 +151,5 @@ public class Testing {
 		cal4.time = 523;
 		int temp = (int)cal4.money();
 		assertTrue(temp==63);
-	}
-	
-	@Test
-	public void testResult(){		
-		Calculator cal4 = new Calculator();//assertEquals(a,b)
-		cal4.grade = 1;
-		cal4.line = 1;
-		cal4.time = 999;
-		assertEquals(cal4.result(),"금액은 $49.95 입니다.");
 	}
 }
