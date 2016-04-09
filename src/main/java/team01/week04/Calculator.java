@@ -78,7 +78,6 @@ public class Calculator {
 		        cal.time= Integer.parseInt(fileline.split(" ")[1]);
 		        cal.line= Integer.parseInt(fileline.split(" ")[2]);
 			logInfo.info(String.format("%.2f",cal.money()));
-			//logInfo.info(String.format("%.2f",cal1.money()));
 			logInfo.info("\n");
 		}
 		br.close();
