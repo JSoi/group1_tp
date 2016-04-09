@@ -22,7 +22,7 @@ public class Testing {
 	}
 	
 		@Test
-	public void test callLineSilver(){
+	public void testcallLineSilver(){
 		Calculator cal1 = new  Calculator();
 		cal1.grade = 2;
 		call.line =4;
