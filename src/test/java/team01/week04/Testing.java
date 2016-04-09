@@ -12,7 +12,7 @@ public class Testing {
 		cal6.grade = 1;
 		cal6.line = 1;
 		cal6.time = 999;
-		assertTrue(cal6.money() == 49.95);
+		assertEquals(cal6.money() == 49.95);
 	}
 	
 	@Test
@@ -21,7 +21,7 @@ public class Testing {
 		cal6.grade = 2;
 		cal6.line = 1;
 		cal6.time = 499;
-		assertTrue(cal6.money() == 29.95);
+		assertEquals(cal6.money() == 29.95);
 	}
 	
 	@Test
@@ -30,7 +30,7 @@ public class Testing {
 		cal6.grade = 3;
 		cal6.line = 1;
 		cal6.time = 878;
-		assertTrue(cal6.money() == 0);
+		assertEquals(cal6.money() == 0);
 	}
 
 	@Test
@@ -77,7 +77,7 @@ public class Testing {
 	public void testMinusLIne(){
 		Calculator cal1 = new Calculator();
 		cal1.line = -100;
-		assertEquals(cal1.calline(),-1);
+		assertTrue(((cal1.calline()+1)<0.1)&&((cal1.calline()+1)>=0));
 	}
 	
 	@Test
