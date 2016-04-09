@@ -79,7 +79,9 @@ public class Calculator {
 		for (;;) {
 			Calculator cal = new Calculator();
 	        	String fileline = br.readLine();
-	            	if (fileline==null) break;
+	            	if (fileline==null){
+	            		break;
+	            	} 
 	            	//등급,통화시간 회선개수추가 
 		        cal.grade= Integer.parseInt(fileline.split(" ")[0]);
 		        cal.time= Integer.parseInt(fileline.split(" ")[1]);
