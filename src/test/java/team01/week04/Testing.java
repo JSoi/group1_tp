@@ -45,7 +45,7 @@ public class Testing {
 		Calculator cal2 = new Calculator();//assertEquals(a,b)
 		cal2.grade = 1;
 		cal2.line = 4;
-		assertEquals(cal6.calline(), 34.0, 0.2);//assertTrue(((cal2.calline()-34.0)<0.1)&&((cal2.calline()-34.0)>=0));
+		assertEquals(cal2.calline(), 34.0, 0.02);//assertTrue(((cal2.calline()-34.0)<0.1)&&((cal2.calline()-34.0)>=0));
 	}
 	
 	@Test
@@ -53,7 +53,7 @@ public class Testing {
 		Calculator cal1 = new  Calculator();
 		cal1.grade = 2;
 		cal1.line =4;
-		assertEquals(cal6.calline(), 48.0, 0.02);//assertTrue(((cal1.calline()-48.0)<0.1)&&((cal1.calline()-48.0)>=0));
+		assertEquals(cal1.calline(), 48.0, 0.02);//assertTrue(((cal1.calline()-48.0)<0.1)&&((cal1.calline()-48.0)>=0));
 		
 	}
 	
@@ -62,7 +62,7 @@ public class Testing {
 		Calculator cal1 = new Calculator();
 		cal1.grade = 1;
 		cal1.line=2;
-		assertEquals(cal6.calline(), 14.5, 0.02);//assertTrue(((cal1.calline()-14.5)<0.1)&&((cal1.calline()-14.5)>=0));
+		assertEquals(cal1.calline(), 14.5, 0.02);//assertTrue(((cal1.calline()-14.5)<0.1)&&((cal1.calline()-14.5)>=0));
 	}
 	
 	@Test
@@ -70,7 +70,7 @@ public class Testing {
 		Calculator cal1 = new Calculator();
 		cal1.grade = 2;
 		cal1.line=2;
-		assertEquals(cal6.calline(), 21.5, 0.02);//assertTrue(((cal1.calline()-21.5)<0.1)&&((cal1.calline()-21.5)>=0));
+		assertEquals(cal61.calline(), 21.5, 0.02);//assertTrue(((cal1.calline()-21.5)<0.1)&&((cal1.calline()-21.5)>=0));
 	}
 	
 	
@@ -80,7 +80,7 @@ public class Testing {
 		Calculator cal1 = new Calculator(); //assertEquals(a,b)
 		cal1.grade = 1;
 		cal1.line = 1;
-		assertEquals(cal6.calline(), 0.0, 0.02);//assertTrue(((cal1.calline())<0.1)&&((cal1.calline())>=0));	
+		assertEquals(cal1.calline(), 0.0, 0.02);//assertTrue(((cal1.calline())<0.1)&&((cal1.calline())>=0));	
 	}
 	
 	
