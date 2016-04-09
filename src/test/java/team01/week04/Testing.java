@@ -70,7 +70,7 @@ public class Testing {
 		Calculator cal1 = new Calculator();
 		cal1.grade = 2;
 		cal1.line=2;
-		assertEquals(cal61.calline(), 21.5, 0.02);//assertTrue(((cal1.calline()-21.5)<0.1)&&((cal1.calline()-21.5)>=0));
+		assertEquals(cal1.calline(), 21.5, 0.02);//assertTrue(((cal1.calline()-21.5)<0.1)&&((cal1.calline()-21.5)>=0));
 	}
 	
 	
@@ -126,34 +126,34 @@ public class Testing {
 		Calculator cal = new Calculator();//assertEquals(a,b)
 		cal.grade = 1;
 		cal.time = 878;
-		assertEquals(cal6.calminute(), 49.95, 0.02);//assertTrue((cal.calminute()-49.95)<0.1&&(cal.calminute()-49.95)>=0);
+		assertEquals(cal.calminute(), 49.95, 0.02);//assertTrue((cal.calminute()-49.95)<0.1&&(cal.calminute()-49.95)>=0);
 	}
 	@Test
 	public void testcalminutegoldexistaddline(){
 		Calculator cal = new Calculator();//assertEquals(a,b)
 		cal.grade = 1;
 		cal.time = 1127;
-		assertEquals(cal6.calminute(), 107.1, 0.02);//assertTrue((cal.calminute()-107.1)<0.1&&(cal.calminute()-107.1)>=0);
+		assertEquals(cal.calminute(), 107.1, 0.02);//assertTrue((cal.calminute()-107.1)<0.1&&(cal.calminute()-107.1)>=0);
 	}
 	@Test
 	public void testcalminutesilvernoaddline(){
 		Calculator cal = new Calculator();//assertEquals(a,b)
 		cal.grade = 2;
 		cal.time = 300;
-		assertEquals(cal6.calminute(), 29.95, 0.02);//assertTrue((cal.calminute()-29.95)<0.1&&(cal.calminute()-29.95)>=0);
+		assertEquals(cal.calminute(), 29.95, 0.02);//assertTrue((cal.calminute()-29.95)<0.1&&(cal.calminute()-29.95)>=0);
 	}
 	@Test
 	public void testcalminutesilverexistaddline(){
 		Calculator cal = new Calculator();//assertEquals(a,b)
 		cal.grade = 2;
 		cal.time = 1200;
-		assertEquals(cal6.calminute(), 407.95, 0.02);//assertTrue((cal.calminute()-407.95)<0.1&&(cal.calminute()-407.95)>=0);
+		assertEquals(cal.calminute(), 407.95, 0.02);//assertTrue((cal.calminute()-407.95)<0.1&&(cal.calminute()-407.95)>=0);
 	}
 	@Test
 	public void testcalminuteerror(){
 		Calculator cal = new Calculator();//assertEquals(a,b)
 		cal.grade = 3;
-		assertEquals(cal6.calminute()+1, 0.1, 0.02);//assertTrue((cal.calminute()+1)>=-0.1&&(cal.calminute()+1)<0.1);
+		assertEquals(cal.calminute()+1, 0.1, 0.02);//assertTrue((cal.calminute()+1)>=-0.1&&(cal.calminute()+1)<0.1);
 	}
 
 	@Test
