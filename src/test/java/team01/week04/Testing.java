@@ -153,7 +153,7 @@ public class Testing {
 	public void testcalminuteerror(){
 		Calculator cal = new Calculator();//assertEquals(a,b)
 		cal.grade = 3;
-		assertEquals(cal.calminute()+1, 0.1, 0.02);//assertTrue((cal.calminute()+1)>=-0.1&&(cal.calminute()+1)<0.1);
+		assertEquals(cal.calminute()+1, 0.0, 0.02);//assertTrue((cal.calminute()+1)>=-0.1&&(cal.calminute()+1)<0.1);
 	}
 
 	@Test
