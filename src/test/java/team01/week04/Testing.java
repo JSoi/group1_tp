@@ -30,7 +30,7 @@ public class Testing {
 		cal6.grade = 3;
 		cal6.line = 1;
 		cal6.time = 878;
-		assertTrue(cal6.money() == 0.0);
+		assertTrue( (cal6.money()< 0.1) && (cal6.money()>= 0) );
 	}
 
 	@Test
