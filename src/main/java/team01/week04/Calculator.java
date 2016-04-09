@@ -57,9 +57,10 @@ public class Calculator {
 		}
 		if(addline()>=0)
 			return (grade==1)? 14.5 * 2 + addline() * 5 :21.5 * 2 + addline() * 5;
+		else if (addline() < 0)
+			return (grade == 1) ? 14.5 * (line - 1) : 21.5 * (line - 1);
 		else
-			return (grade==1)?14.5 * (line - 1):21.5 * (line - 1);
-		
+			return -1;
 	}
 
 	public static void main(String[] args) throws IOException {
