@@ -60,7 +60,7 @@ public class Calculator {
 		else
 			return (grade == 1) ? 14.5 * (line - 1) : 21.5 * (line - 1);
 	}
-
+/**
 	public static void main(String[] args) throws IOException {
 		 final Logger logInfo = Logger.getLogger(
 				    Thread.currentThread().getStackTrace()[0].getClassName() );
@@ -80,4 +80,5 @@ public class Calculator {
 		}
 		br.close();
 	}
+**/
 }
