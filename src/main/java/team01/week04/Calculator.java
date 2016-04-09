@@ -78,13 +78,12 @@ public class Calculator {
 		BufferedReader br = new BufferedReader(new FileReader("/src/Out.txt"));
 		for (;;) {
 			Calculator cal = new Calculator();
-	        	String line = br.readLine();
+	        	String fileline = br.readLine();
 	            	if (line==null) break;
-	            	System.out.println(line);
 	            	//등급,통화시간 회선개수추가 
-		        cal.grade= Integer.parseInt(line.split(" ")[0]);
-		        cal.time= Integer.parseInt(line.split(" ")[1]);
-		        cal.line= Integer.parseInt(line.split(" ")[2]);
+		        cal.grade= Integer.parseInt(fileline.split(" ")[0]);
+		        cal.time= Integer.parseInt(fileline.split(" ")[1]);
+		        cal.line= Integer.parseInt(fileline.split(" ")[2]);
 			logInfo.info(cal.result());
 
 			logInfo.info("\n");
