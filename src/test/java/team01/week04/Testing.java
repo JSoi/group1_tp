@@ -22,7 +22,7 @@ public class Testing {
 	}
 	
 		@Test
-	public void testAddLineSilver(){
+	public void test callLineSilver(){
 		Calculator cal1 = new  Calculator();
 		cal1.grade = 2;
 		call.line =4;
@@ -32,7 +32,7 @@ public class Testing {
 	@Test
 	public void testNoAddLineGold(){
 		Calculator cal1 = new Calculator();
-		cal1.grade = 2;
+		cal1.grade = 1;
 		call.line=2;
 		assertTrue(cal1.callline()==14.5);
 	}
