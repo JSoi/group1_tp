@@ -13,6 +13,7 @@ public class Testing {
 		cal6.line = 1;
 		cal6.time = 999;
 		assertTrue( ((cal6.money() - 49.95) < 0.1) && ((cal6.money() - 49.95)>= 0) );
+		assertEquals(cal6.money(), 49.95, 0.02);
 	}
 	
 	@Test
