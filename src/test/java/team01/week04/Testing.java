@@ -73,12 +73,7 @@ public class Testing {
 		assertTrue(((cal1.calline()-21.5)<0.1)&&((cal1.calline()-21.5)>=0));
 	}
 	
-	@Test
-	public void testMinusLIne(){
-		Calculator cal1 = new Calculator();
-		cal1.line = -100;
-		assertTrue(cal1.calline()==-1);
-	}
+	
 	
 	@Test
 	public void testonelinegoldcalline(){
