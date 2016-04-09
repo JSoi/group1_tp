@@ -7,33 +7,6 @@ import team01.week04.Calculator;
 public class Testing {
 
 	@Test
-	public void testMoneyGold(){
-		Calculator cal6 = new Calculator();//assertEquals(a,b)
-		cal6.grade = 1;
-		cal6.line = 1;
-		cal6.time = 999;
-		assertTrue(cal6.money() == 49.95);
-	}
-	
-	@Test
-	public void testMoneySilver(){
-		Calculator cal6 = new Calculator();//assertEquals(a,b)
-		cal6.grade = 2;
-		cal6.line = 1;
-		cal6.time = 499;
-		assertTrue(cal6.money() == 29.95);
-	}
-	
-	@Test
-	public void testMoneyOthers(){
-		Calculator cal6 = new Calculator();//assertEquals(a,b)
-		cal6.grade = 3;
-		cal6.line = 1;
-		cal6.time = 878;
-		assertTrue(cal6.money() == 0);
-	}
-	
-	@Test
 	public void testaddline(){
 		Calculator cal1 = new Calculator(); //assertEquals(a,b)
 		cal1.line = 5;
@@ -47,6 +20,30 @@ public class Testing {
 		cal2.line = 4;
 		assertTrue(cal2.calline()==34);
 	}
+	
+		@Test
+	public void testAddLineSilver(){
+		Calculator cal1 = new  Calculator();
+		cal1.grade = 2;
+		call.line =4;
+		assertTrue(cal1.calline()==48);
+	}
+	
+	@Test
+	public void testNoAddLineGold(){
+		Calculator cal1 = new Calculator();
+		cal1.grade = 2;
+		call.line=2;
+		assertTrue(cal1.callline()==14.5);
+	}
+	
+	@Test
+	public void testNoAddLineSilver(){
+		Calculator cal1 = new Calculator();
+		cal1.grade = 2;
+		call.line=2;
+		assertTrue(cal1.calline()==21.5);
+	}
 	@Test
 	public void testonelinegoldcalline(){
 		Calculator cal1 = new Calculator(); //assertEquals(a,b)
@@ -55,39 +52,11 @@ public class Testing {
 		assertTrue(cal1.calline()==0.0);	
 	}
 	@Test
-	public void testcalminutegoldnoaddline(){
-		Calculator cal = new Calculator();//assertEquals(a,b)
-		cal.grade = 1;
-		cal.time = 878;
-		assertTrue((cal.calminute()-49.95)<0.1&&(cal.calminute()-49.95)>=0);
-	}
-	@Test
-	public void testcalminutegoldexistaddline(){
-		Calculator cal = new Calculator();//assertEquals(a,b)
-		cal.grade = 1;
-		cal.time = 1127;
-		assertTrue((cal.calminute()-107.1)<0.1&&(cal.calminute()-107.1)>=0);
-	}
-	@Test
-	public void testcalminutesilvernoaddline(){
-		Calculator cal = new Calculator();//assertEquals(a,b)
-		cal.grade = 2;
-		cal.time = 300;
-		assertTrue((cal.calminute()-29.95)<0.1&&(cal.calminute()-29.95)>=0);
-	}
-	@Test
-	public void testcalminutesilverexistaddline(){
-		Calculator cal = new Calculator();//assertEquals(a,b)
-		cal.grade = 2;
-		cal.time = 1200;
-		assertTrue((cal.calminute()-407.95)<0.1&&(cal.calminute()-407.95)>=0);
-	}
-	@Test
-	public void testcalminuteerror(){
-		Calculator cal = new Calculator();//assertEquals(a,b)
-		cal.grade = 3;
-		cal.time = 1200;
-		assertTrue((cal.calminute()+1)>=-0.1&&(cal.calminute()+1)<0.1);
+	public void testcalminute(){
+		Calculator cal3 = new Calculator();//assertEquals(a,b)
+		cal3.grade = 1;
+		cal3.time = 878;
+		assertTrue((cal3.calminute()-49.95)<0.1&&(cal3.calminute()-49.95)>=0);
 	}
 
 	@Test
