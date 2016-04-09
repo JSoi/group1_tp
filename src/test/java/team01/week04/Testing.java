@@ -72,12 +72,20 @@ public class Testing {
 		cal1.line=2;
 		assertTrue(((cal1.calline()-21.5)<0.1)&&((cal1.calline()-21.5)>=0));
 	}
+	
+	@Test
+	public void testMinusLIne(){
+		Calculator cal1 = new Calculator();
+		cal1.line = -100;
+		assertTrue(((cal1.calline()+1)<0.1)&&((cal1.calline()+1)>=0));
+	}
+	
 	@Test
 	public void testonelinegoldcalline(){
 		Calculator cal1 = new Calculator(); //assertEquals(a,b)
 		cal1.grade = 1;
 		cal1.line = 1;
-		assertTrue(cal1.calline()==0.0);	
+		assertTrue(((cal1.calline())<0.1)&&((cal1.calline())>=0));	
 	}
 	
 	
