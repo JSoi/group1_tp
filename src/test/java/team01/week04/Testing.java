@@ -52,11 +52,67 @@ public class Testing {
 		assertTrue(cal1.calline()==0.0);	
 	}
 	@Test
-	public void testcalminute(){
-		Calculator cal3 = new Calculator();//assertEquals(a,b)
-		cal3.grade = 1;
-		cal3.time = 878;
-		assertTrue((cal3.calminute()-49.95)<0.1&&(cal3.calminute()-49.95)>=0);
+	public void testaddminutegoldnoaddminute(){
+		Calculator cal = new Calculator();//assertEquals(a,b)
+		cal.grade = 1;
+		cal.time = 800;
+		assertEquals(cal.addminute(),-1);
+	}
+	@Test
+	public void testaddminutegoldexistaddminute(){
+		Calculator cal = new Calculator();//assertEquals(a,b)
+		cal.grade = 1;
+		cal.time = 1800;
+		assertEquals(cal.addminute(),800);
+	}
+	@Test
+	public void testaddminutesilvernoaddminute(){
+		Calculator cal = new Calculator();//assertEquals(a,b)
+		cal.grade = 2;
+		cal.time = 100;
+		assertEquals(cal.addminute(),-1);
+	}
+	@Test
+	public void testaddminutesilverexistaddminute(){
+		Calculator cal = new Calculator();//assertEquals(a,b)
+		cal.grade = 2;
+		cal.time = 700;
+		assertEquals(cal.addminute(),200);
+	}
+	@Test
+	public void testcalminutegoldnoaddline(){
+		Calculator cal = new Calculator();//assertEquals(a,b)
+		cal.grade = 1;
+		cal.time = 878;
+		assertTrue((cal.calminute()-49.95)<0.1&&(cal.calminute()-49.95)>=0);
+	}
+	@Test
+	public void testcalminutegoldexistaddline(){
+		Calculator cal = new Calculator();//assertEquals(a,b)
+		cal.grade = 1;
+		cal.time = 1127;
+		assertTrue((cal.calminute()-107.1)<0.1&&(cal.calminute()-107.1)>=0);
+	}
+	@Test
+	public void testcalminutesilvernoaddline(){
+		Calculator cal = new Calculator();//assertEquals(a,b)
+		cal.grade = 2;
+		cal.time = 300;
+		assertTrue((cal.calminute()-29.95)<0.1&&(cal.calminute()-29.95)>=0);
+	}
+	@Test
+	public void testcalminutesilverexistaddline(){
+		Calculator cal = new Calculator();//assertEquals(a,b)
+		cal.grade = 2;
+		cal.time = 1200;
+		assertTrue((cal.calminute()-407.95)<0.1&&(cal.calminute()-407.95)>=0);
+	}
+	@Test
+	public void testcalminuteerror(){
+		Calculator cal = new Calculator();//assertEquals(a,b)
+		cal.grade = 3;
+		cal.time = 1200;
+		assertTrue((cal.calminute()+1)>=-0.1&&(cal.calminute()+1)<0.1);
 	}
 
 	@Test
