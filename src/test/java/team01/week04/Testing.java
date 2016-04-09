@@ -11,8 +11,8 @@ public class Testing {
 		Calculator cal6 = new Calculator();//assertEquals(a,b)
 		cal6.grade = 1;
 		cal6.line = 1;
-		cal6.time = 878;
-		assertTrue(cal6.money() == 0.0);
+		cal6.time = 999;
+		assertTrue(cal6.money() == 49.95);
 	}
 	
 	@Test
@@ -20,8 +20,8 @@ public class Testing {
 		Calculator cal6 = new Calculator();//assertEquals(a,b)
 		cal6.grade = 2;
 		cal6.line = 1;
-		cal6.time = 878;
-		assertTrue(cal6.money() == 0.0);
+		cal6.time = 499;
+		assertTrue(cal6.money() == 29.95);
 	}
 	
 	@Test
