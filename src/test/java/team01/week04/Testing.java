@@ -45,7 +45,7 @@ public class Testing {
 		Calculator cal2 = new Calculator();//assertEquals(a,b)
 		cal2.grade = 1;
 		cal2.line = 4;
-		assertEqual(cal2.calline(),34.0);
+		assertEquals(cal2.calline(),34.0);
 	}
 	
 		@Test
@@ -53,7 +53,7 @@ public class Testing {
 		Calculator cal1 = new  Calculator();
 		cal1.grade = 2;
 		cal1.line =4;
-		assertEqual(cal1.calline(),48.0);
+		assertEquals(cal1.calline(),48.0);
 	}
 	
 	@Test
@@ -150,5 +150,14 @@ public class Testing {
 		cal4.time = 523;
 		int temp = (int)cal4.money();
 		assertTrue(temp==63);
+	}
+	
+	@Test
+	public void testResult(){		
+		Calculator cal4 = new Calculator();//assertEquals(a,b)
+		cal4.grade = 1;
+		cal4.line = 1;
+		cal4.time = 999;
+		assertEquals(cal4.result(),"금액은 $49.95 입니다.");
 	}
 }
