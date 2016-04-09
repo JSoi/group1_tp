@@ -45,7 +45,7 @@ public class Testing {
 		Calculator cal2 = new Calculator();//assertEquals(a,b)
 		cal2.grade = 1;
 		cal2.line = 4;
-		assertEqual(cal2.calline(),34);
+		assertEqual(cal2.calline(),34.0);
 	}
 	
 		@Test
@@ -53,7 +53,7 @@ public class Testing {
 		Calculator cal1 = new  Calculator();
 		cal1.grade = 2;
 		cal1.line =4;
-		assertEqual(cal1.calline(),48);
+		assertEqual(cal1.calline(),48.0);
 	}
 	
 	@Test
