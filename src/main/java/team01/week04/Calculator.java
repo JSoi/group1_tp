@@ -1,6 +1,5 @@
 package team01.week04;
 
-import java.util.Scanner;
 import java.util.logging.Logger;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -58,10 +57,8 @@ public class Calculator {
 		}
 		if(addline()>=0)
 			return (grade==1)? 14.5 * 2 + addline() * 5 :21.5 * 2 + addline() * 5;
-		else if(addline()<0)
-			return (grade==1)?14.5 * (line - 1):21.5 * (line - 1);
 		else
-			return -1;
+			return (grade==1)?14.5 * (line - 1):21.5 * (line - 1);
 		
 	}
 
