@@ -79,6 +79,9 @@ public class Testing {
 		cal1.line = 1;
 		assertTrue(cal1.calline()==0.0);	
 	}
+	
+	
+	/* Addminute */
 	@Test
 	public void testaddminutegoldnoaddminute(){
 		Calculator cal = new Calculator();//assertEquals(a,b)
@@ -107,6 +110,14 @@ public class Testing {
 		cal.time = 700;
 		assertEquals(cal.addminute(),200);
 	}
+	@Test
+	public void testaddminuteerror(){
+		Calculator cal = new Calculator();//assertEquals(a,b)
+		cal.grade = 3;
+		cal.time = 700;
+		assertEquals(cal.addminute(),-100);
+	}
+	/* Calminute */
 	@Test
 	public void testcalminutegoldnoaddline(){
 		Calculator cal = new Calculator();//assertEquals(a,b)
@@ -139,7 +150,6 @@ public class Testing {
 	public void testcalminuteerror(){
 		Calculator cal = new Calculator();//assertEquals(a,b)
 		cal.grade = 3;
-		cal.time = 1200;
 		assertTrue((cal.calminute()+1)>=-0.1&&(cal.calminute()+1)<0.1);
 	}
 
