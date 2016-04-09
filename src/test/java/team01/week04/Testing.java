@@ -34,7 +34,7 @@ public class Testing {
 		Calculator cal1 = new Calculator();
 		cal1.grade = 1;
 		cal1.line=2;
-		assertTrue(cal1.callline()==14.5);
+		assertTrue(cal1.calline()==14.5);
 	}
 	
 	@Test
