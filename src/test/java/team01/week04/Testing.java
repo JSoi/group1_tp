@@ -21,7 +21,7 @@ public class Testing {
 		cal6.grade = 2;
 		cal6.line = 1;
 		cal6.time = 499;
-		assertTrue( ((cal6.money() - 29.95) < 0.1) && ((cal6.money() - 29.95)>= 0)) );
+		assertTrue( ((cal6.money() - 29.95) < 0.1) && ((cal6.money() - 29.95)>= 0) );
 	}
 	
 	@Test
