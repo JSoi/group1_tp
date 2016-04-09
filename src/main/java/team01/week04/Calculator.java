@@ -52,24 +52,17 @@ public class Calculator {
 	}
 
 	public double calline() {
-			
-			if (line == 1) {
-				return 0;}
-			if(addline()>=0)
-				return (grade==1)? 14.5 * 2 + addline() * 5 :21.5 * 2 + addline() * 5;
-			else if(addline()<0)
-				return (grade==1)?14.5 * (line - 1):21.5 * (line - 1);
-			else
-				return -1;
-			
+		
+		if (line == 1) {
+			return 0;
 		}
-
-	public String result() {
-		if (money()<29.95)
-			return "잘못된 값을 입력하셨습니다.";
-		else {
-			return "금액은 $" + money() + " 입니다.";
-		}
+		if(addline()>=0)
+			return (grade==1)? 14.5 * 2 + addline() * 5 :21.5 * 2 + addline() * 5;
+		else if(addline()<0)
+			return (grade==1)?14.5 * (line - 1):21.5 * (line - 1);
+		else
+			return -1;
+		
 	}
 
 	public static void main(String[] args) throws IOException {
